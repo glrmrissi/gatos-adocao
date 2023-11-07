@@ -5,6 +5,11 @@
 
 }
 
+body {
+    background-color: rgb(148, 134, 109);
+}
+
+
 
 .header_1 {
     display: flex;
@@ -13,9 +18,43 @@
     padding: 1vh 1vh 1vh 1vh;
     background-color: rgb(255, 233, 192);
 }
+
+.div_header {
+    display: flex;
+    margin-right: 1vh;
+}
+
+.div_header svg {
+    cursor: pointer;
+    margin-right: 2vh;
+}
+
 .div_header a{
     color: rgb(0, 0, 0);
     padding: 0 1vh 0 1vh;
+}
+
+.div_header h3{
+    user-select: none;
+}
+
+.myLinks {
+    position: absolute;
+    top: -99px;
+    opacity: 0%;
+    transition: .3s;
+}
+
+.myLinks.navBarActive{
+    position: absolute;
+    top: 99px;
+    opacity: 100%;
+}
+
+.myLinks.navBarActive a {
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
 }
 
 .section_back {
@@ -24,8 +63,7 @@
     align-items: center;
     height: 20vh;
     background-position: center;
-    background-image: url(/assets/img/kitten-pattern-72.webp);
-    z-index: 100;
+    background-image: url(../img/kitten-pattern-72.webp);
 }
 
 .section_back h1{
@@ -35,12 +73,14 @@
 
 .section_cats {
     display: grid;
+    height: 100vh;
     place-items: center;
     grid-template-columns: repeat(4, 1fr);
     margin: 12vh 2vh;
 }
 
 .div_cats {
+    cursor: pointer;
     padding: 1vh 1vh;
     overflow: hidden;
 }
@@ -58,7 +98,7 @@
 }
 
 .card {
-    background-color: rgb(114, 112, 112);
+    background-color: rgb(255, 0, 0);
     text-align: center;
     padding: 10px 20px;
     border-bottom-left-radius: 16px;
