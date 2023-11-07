@@ -37,7 +37,6 @@
     display: grid;
     place-items: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 200px;
     margin: 12vh 2vh;
 }
 
@@ -45,6 +44,7 @@
     padding: 1vh 1vh;
     overflow: hidden;
 }
+
 
 .div_cats img {
     display: block;
