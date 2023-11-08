@@ -6,17 +6,15 @@
 }
 
 body {
-    background-color: rgb(148, 134, 109);
+    background-color: #ffe9c0;
 }
-
-
 
 .header_1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1vh 1vh 1vh 1vh;
-    background-color: rgb(255, 233, 192);
+    background-color: #ffe9c0;
 }
 
 .div_header {
@@ -41,19 +39,34 @@ body {
 .myLinks {
     position: absolute;
     top: -99px;
+    left: 20px;
     opacity: 0%;
-    transition: .3s;
+    transition: .1s;
 }
 
 .myLinks.navBarActive{
     position: absolute;
+    left: 20px;
     top: 99px;
     opacity: 100%;
+    transition: .3s;
+}
+
+.inline {
+    display: grid;
+}
+
+.outline__links {
+    background-color: black;
+    padding: 0.5em 1em;
+
 }
 
 .myLinks.navBarActive a {
-    font-size: 1.1em;
-    color: #000000;
+    user-select: none;
+    margin: 0.5em 1em;
+    font-size: 1.2em;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -98,7 +111,7 @@ body {
 }
 
 .card {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px 20px;
     border-bottom-left-radius: 16px;
